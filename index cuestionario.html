@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Exprime tu conocimiento </title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#f2f2f2;
+text-align:center;
+}
+
+.contenedor{
+background:lightblue;
+width:60%;
+margin:auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.pregunta{
+margin:20px 0;
+text-align:left;
+}
+
+button{
+background:#4CAF50;
+color:white;
+border:none;
+padding:10px 20px;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#45a049;
+}
+
+@media screen and (max-width:900px){
+
+.contenedor{
+width:85%;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+.contenedor{
+width:95%;
+}
+
+button{
+width:80%;
+font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+<h2>sabes de......</h2>
+
+<form id="quiz">
+
+<div class="pregunta">
+<p>1. ¿que marca de auto fue el primero en el mundo?</p>
+<input type="radio" name="p1" value="0"> Ford<br>
+<input type="radio" name="p1" value="1"> Mercedes<br>
+<input type="radio" name="p1" value="0"> BMW
+</div>
+
+<div class="pregunta">
+<p>2. ¿quien fue el fundador de CHEVROLET?</p>
+<input type="radio" name="p2" value="0"> thomsom bord<br>
+<input type="radio" name="p2" value="1"> wiliam C.durant<br>
+<input type="radio" name="p2" value="0"> mario brandom
+</div>
+
+<div class="pregunta">
+<p>3. ¿Qué marca es originario de alemania ?</p>
+<input type="radio" name="p3" value="1"> BMW<br>
+<input type="radio" name="p3" value="0"> FORD<br>
+<input type="radio" name="p3" value="0">CHEVROLET
+</div>
+
+<div class="pregunta">
+<p>4. ¿a que marca le pertenece el automovil llamado grand i10?</p>
+<input type="radio" name="p4" value="1"> HYUNDAI<br>
+<input type="radio" name="p4" value="0"> MERCEDEZ<br>
+<input type="radio" name="p4" value="0"> NISSAN
+</div>
+
+<div class="pregunta">
+<p>5. ¿que marca estuvo en la primera division de nascar?</p>
+<input type="radio" name="p5" value="1"> CHEVROLET<br>
+<input type="radio" name="p5" value="0"> FORD<br>
+<input type="radio" name="p5" value="0"> TOYOTA
+</div>
+
+<left>
+<a href="index.html">regresar </a> <br><br>
+</left>
+
+<button type="button" onclick="calcular()">Enviar respuestas</button>
+
+</form>
+
+<h3 id="resultado"></h3>
+
+</div>
+
+<script>
+function calcular(){
+
+let total = 0;
+
+let preguntas = ["p1","p2","p3","p4","p5"];
+
+preguntas.forEach(function(p){
+let opciones = document.getElementsByName(p);
+
+for(let i=0;i<opciones.length;i++){
+if(opciones[i].checked){
+total += parseInt(opciones[i].value);
+}
+}
+});
+
+document.getElementById("resultado").innerHTML =
+"Tu puntaje es: " + total + " / 5";
+
+}
+</script>
+
+</body>
+</html>

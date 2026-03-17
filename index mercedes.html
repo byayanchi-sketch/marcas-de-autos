@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Página Web de MERCEDES </title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, sans-serif;
+background-color:gray;
+}
+
+
+header{
+background-color:#333;
+color:white;
+padding:20px;
+display:flex;
+align-items:center;
+}
+
+.logo{
+width:130px;
+height:80px;
+margin-right:20px;
+}
+
+
+.titulo{
+font-size:30px;
+}
+
+.info{
+padding:20px;
+font-size:18px;
+}
+
+
+.galeria{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.galeria img{
+width:700px;
+height:500px;
+border-radius:10px;
+}
+
+
+.audio{
+text-align:center;
+padding:20px;
+}
+
+footer{
+background-color:#333;
+color:white;
+text-align:center;
+padding:10px;
+}
+@media screen and (max-width: 900px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+.logo{
+margin-bottom:10px;
+}
+
+.galeria{
+flex-direction:column;
+align-items:center;
+}
+
+.galeria img{
+width:90%;
+height:auto;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+.titulo{
+font-size:24px;
+}
+
+.info{
+font-size:16px;
+}
+
+.galeria img{
+width:100%;
+height:auto;
+}
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<img src="logo mercedes.jpg" class="logo">
+<h1 class="titulo">MERCEDES</h1>
+</header>
+
+<section class="info">
+<p>
+La historia de Mercedes-Benz inicia desde los orígenes mismos del vehículo automotor, ya que el 29 de enero de 1886, el inventor Carl Friedrich Benz solicitó la patente n.° 37.435 al gobierno alemán para un vehículo de tres ruedas, el cual es considerado como el primer vehículo automotor de combustión interna de la historia. El Benz Patent-Motorwagen (en español, "Vehículo motor patentado de Benz"), como se le llamó, se exhibe hoy en el Museo Alemán (Deutsches Museum) en Múnich.<br><br>
+
+Pese al otorgamiento de esta patente, Benz dejó de considerar la comercialización de su invención hasta que en agosto de 1888, su esposa Bertha Benz, sin decirle nada y sin permiso de las autoridades, condujo con sus hijos Richard y Eugen (de 13 y 15 años respectivamente), el nuevo Benz Patent-Motorwagen desde Mannheim hasta Pforzheim, convirtiéndose en la primera persona en conducir un automóvil en una distancia considerable (106 km) y al mismo tiempo, la primera mujer en ponerse a los mandos de un automóvil. Quería demostrarle que el automóvil se convertiría en un éxito financiero una vez que se viera lo útil que podría ser para el público en general.<br><br>
+
+En 1890 se le unieron dos socios: Friedrich von Fischer, que se encargó de la administración, y Julius Ganss, responsable de ventas. Así, Benz tenía las manos libres para entregarse al desarrollo de la parte técnica de los automóviles, lo que favoreció la rápida progresión en este campo.<br>
+imagenes de los modelos mas conocidos:
+</p>
+</section>
+
+<section class="galeria">
+<img src="mercedes 1.jpg">
+<img src="mercedes 2.jpg">
+</section>
+
+<section class="audio">
+<h2>Escucha este audio(cazadores)</h2>
+<audio controls>
+<source src="Cazadores.mpeg">
+Tu navegador no soporta audio.
+</audio>
+
+</section>
+<center>
+<a href="index.html">regresar al inicio</a>
+</center><br>
+
+<footer>
+<p>© 2026 MERCEDES.RC </p>
+</footer>
+
+</body>
+</html>

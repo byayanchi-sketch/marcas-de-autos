@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Comentarios</title>
+
+<style>
+
+body {
+font-family: Arial, sans-serif;
+background: #f2f2f2;
+text-align: center;
+padding: 20px;
+}
+
+h2 {
+color: #333;
+}
+
+input, textarea {
+width: 300px;
+padding: 10px;
+margin: 5px;
+}
+
+button {
+padding: 10px 20px;
+cursor: pointer;
+}
+
+#comentarios {
+margin-top: 30px;
+}
+
+.comentario {
+background: #fff;
+display: inline-block;
+padding: 15px 20px;
+margin: 10px auto;
+border-radius: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+width: 80%;
+position: relative;
+}
+
+.eliminar {
+position: absolute;
+top: 5px;
+right: 10px;
+background: #ff4d4d;
+border: none;
+color: #fff;
+border-radius: 50%;
+width: 25px;
+height: 25px;
+font-weight: bold;
+line-height: 25px;
+cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+
+input, textarea{
+width:80%;
+}
+
+.comentario{
+width:90%;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+input, textarea{
+width:95%;
+}
+
+button{
+width:80%;
+}
+
+.comentario{
+width:95%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Comentarios</h2>
+<h2> En este  espacio podras dejar un cometario de como te parecio la pagina</h2>
+
+<input type="text" id="nombre" placeholder="Tu nombre" required><br>
+<textarea id="comentario" placeholder="Escribe tu comentario" required></textarea><br>
+<button onclick="agregarComentario()">Enviar</button>
+
+<h3>Comentarios:</h3>
+<div id="comentarios"></div>
+
+<script>
+
+function agregarComentario() {
+
+let nombre = document.getElementById("nombre").value.trim();
+let comentario = document.getElementById("comentario").value.trim();
+
+if (nombre !== "" && comentario !== "") {
+
+let contenedor = document.createElement("div");
+contenedor.className = "comentario";
+
+contenedor.innerHTML = `<b>${nombre}:</b> ${comentario}
+<button class="eliminar" onclick="eliminarComentario(this)">x</button>`;
+
+document.getElementById("comentarios").appendChild(contenedor);
+
+document.getElementById("nombre").value = "";
+document.getElementById("comentario").value = "";
+
+}
+
+}
+
+function eliminarComentario(boton) {
+
+if (confirm("¿Estás seguro de que quieres eliminar este comentario?")) {
+boton.parentElement.remove();
+}
+
+}
+
+</script>
+
+</body>
+</html>

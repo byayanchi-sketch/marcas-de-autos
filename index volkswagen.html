@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Página Web de volkswagen </title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, sans-serif;
+background-color:pink;
+}
+
+header{
+background-color:#333;
+color:white;
+padding:20px;
+display:flex;
+align-items:center;
+}
+
+.logo{
+width:130px;
+height:80px;
+margin-right:20px;
+}
+
+.titulo{
+font-size:30px;
+}
+
+.info{
+padding:20px;
+font-size:18px;
+}
+
+.galeria{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.galeria img{
+width:700px;
+height:500px;
+border-radius:10px;
+}
+
+.audio{
+text-align:center;
+padding:20px;
+}
+
+footer{
+background-color:#333;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+@media screen and (max-width: 900px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+.logo{
+margin-bottom:10px;
+}
+
+.galeria{
+flex-direction:column;
+align-items:center;
+}
+
+.galeria img{
+width:90%;
+height:auto;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+.titulo{
+font-size:24px;
+}
+
+.info{
+font-size:16px;
+}
+
+.galeria img{
+width:100%;
+height:auto;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<img src="logo volswagen.jpeg" class="logo">
+<h1 class="titulo">VOLKSWAGEN</h1>
+</header>
+
+<section class="info">
+<p>
+El nombre Volkswagen se debe a que en Alemania en los años 1930 surgió el proyecto de construir un automóvil que fuese accesible para el mayor número de personas. Cuando Adolf Hitler se alzó con el esperado poder en 1933, decidió poner en marcha un plan de fomento de la industria automotriz, con el objetivo de relanzar sus fábricas y hacerlas más competitivas frente a las inglesas y las francesas. De este modo se lanzó un concurso a los empresarios para la concesión de la fabricación del denominado automóvil del pueblo (Volkswagen). Ferdinand Porsche fue el encargado de llevar a cabo el proyecto, cuyo fin era construir un vehículo sencillo y barato que pudiese estar al alcance de la mayoría de los alemanes.<br><br>
+
+Hitler pretendía construir la fábrica más grande de Europa para la fabricación del automóvil del pueblo. Para ello, el requisito era tener acceso a una vía fluvial navegable. También era necesaria una central eléctrica propia, que abasteciera tanto a la fábrica como a la nueva ciudad. Hitler escogió el pueblo de Fallersleben, a orillas del canal de Mittelland. El lugar formaba parte desde el siglo XIV del condado de Schloss Wolfsburg, propiedad del conde von Schulenburg. Según las ideas de Hitler, la fábrica debía disponer de su propia ciudad anexada a la misma para alojar a los trabajadores y sus familias.<br><br>
+
+Volkswagen fue fundada en 1937 por el Frente Laboral Alemán, que era una organización laboral nazi. La empresa se llamaba originalmente "Gesellschaft zur Vorbereitung des Deutschen Volkswagens mbH", que se traduce como "Compañía para la preparación de la Volkswagen Ltd." alemana. El objetivo de la empresa era producir un "coche del pueblo" (Volkswagen en alemán) que fuera asequible y fiable.<br><br>
+
+El primer automóvil que Volkswagen produjo fue el Volkswagen Beetle, diseñado por Ferdinand Porsche. El Beetle se convirtió rápidamente en un símbolo del régimen nazi y la producción del automóvil continuó durante la Segunda Guerra Mundial. Después de la guerra, Volkswagen pasó a manos del ejército británico, que dirigió la empresa hasta que volvió al control alemán en 1949.<br>
+imagenes de los modelos mas conocidos:
+</p>
+</section>
+
+<section class="galeria">
+<img src="volswagen 1.jpg">
+<img src="volswagen 2.jpeg">
+</section>
+
+<section class="audio">
+<h2>Audio(La Captura Del Chapo)</h2>
+<audio controls>
+<source src="La Captura Del Chapo.mp4">
+Tu navegador no soporta audio.
+</audio>
+</section>
+
+<center>
+<a href="index.html">regresar a la pagina principal </a><br><br>
+</center>
+
+<footer>
+<p>© 2026 Volkswagen.RC </p>
+</footer>
+
+</body>
+</html>
