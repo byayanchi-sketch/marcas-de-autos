@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Página Web de BMW </title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, sans-serif;
+background-color:orange;
+}
+
+
+header{
+background-color:#333;
+color:white;
+padding:20px;
+display:flex;
+align-items:center;
+}
+
+.logo{
+width:130px;
+height:80px;
+margin-right:20px;
+}
+
+
+.titulo{
+font-size:30px;
+}
+
+.info{
+padding:20px;
+font-size:18px;
+}
+
+
+.galeria{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.galeria img{
+width:700px;
+height:500px;
+border-radius:10px;
+}
+
+
+.audio{
+text-align:center;
+padding:20px;
+}
+
+footer{
+background-color:#333;
+color:white;
+text-align:center;
+padding:10px;
+}
+@media screen and (max-width: 900px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+.logo{
+margin-bottom:10px;
+}
+
+.galeria{
+flex-direction:column;
+align-items:center;
+}
+
+.galeria img{
+width:90%;
+height:auto;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+.titulo{
+font-size:24px;
+}
+
+.info{
+font-size:16px;
+}
+
+.galeria img{
+width:100%;
+height:auto;
+}
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<img src="logo bmw.jpeg" class="logo">
+<h1 class="titulo">BMW</h1>
+</header>
+
+<section class="info">
+<p>
+La historia del Grupo BMW se remonta a 1916. Hoy, las cuatro marcas BMW, MINI, Rolls-Royce y BMW Motorrad convierten al Grupo BMW en uno de los principales proveedores premium de automóviles, motocicletas y servicios de movilidad del mundo. Desde sus inicios, la compañía ha mantenido la mirada puesta en el futuro y, por ello, ha situado la sostenibilidad y la gestión eficiente de los recursos en el centro de su estrategia. <br><br>
+Conozca más sobre la historia y el enfoque histórico del Grupo BMW<br>
+BMW tiene sus orígenes en Karl Rapp y Gustav Otto. En 1916, la empresa Flugmaschinenfabrik Gustav Otto se fusionó con Bayerische Flugzeug-Werke AG (BFW) por orden del gobierno. Por otra parte, en 1917, la empresa Rapp Motorenwerke se convirtió en Bayerische Motoren Werke GmbH, que se transformó en una AG (sociedad anónima) en 1918. Posteriormente, BMW AG transfirió sus operaciones de fabricación de motores, incluyendo la empresa y las marcas, a BFW en 1922. Por lo tanto, la fecha de fundación de BFW, el 7 de marzo de 1916, ha pasado a la historia como la fecha de fundación de Bayerische Motoren Werke AG.<br><br>
+Los modelos BMW se diferencian en lo que concierne al nombre comercial según su modelo, cubicaje del motor y otras características (por ejemplo - 325iX). El primer dígito se refiere al modelo o serie, los dos dígitos siguientes se refieren al cubicaje del motor (no siempre representan la cilindrada exacta, por ejemplo, 320i E46 a partir de 2001 era un motor L6 con 2.200cc), y las letras se refieren a un rasgo diferenciador, tipo de chasis, o características del coche o motor. (i = inyección, X = tracción a las cuatro ruedas).<br>
+imagenes de los modelos mas conocidos:
+</p>
+</section>
+
+<section class="galeria">
+<img src="bmw 1.jpeg">
+<img src="bmw 2.jpeg">
+</section>
+
+<section class="audio">
+<h2>Escucha este audio</h2>
+<audio controls>
+<source src="El mini 6.mp4">
+Tu navegador no soporta audio.
+</audio>
+
+</section>
+<center>
+<a href="index.html">regresar al inicio</a>
+</center><br>
+
+<footer>
+<p>© 2026 BMW.RC </p>
+</footer>
+
+</body>
+</html>
