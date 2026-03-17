@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EL MOTOR DE TU DIA A DIA </title> 
+
+<style> 
+
+body{ 
+    font-family: verdana, sans-serif; 
+    margin: 0; 
+    background-color: pink; 
+}
+
+header{     
+    background-image: url("banner.jpg"); 
+    background-size:cover; 
+    background-position: center; 
+    color:red; 
+    text-align:center; 
+    padding: 40px 40px; 
+}
+
+nav{ 
+    background-color: black; 
+    text-align: left; 
+}
+
+nav a{ 
+    color: white; 
+    text-decoration: none; 
+    padding: 15px; 
+    display: inline-block; 
+}
+
+nav a:hover{ 
+    background-color: orange; 
+    color: black; 
+}
+
+.dropdown{ 
+    display: inline-block; 
+    position: relative; 
+}
+
+.dropdown-content{ 
+    display: none; 
+    position: absolute; 
+    background-color: gray; 
+}
+
+.dropdown-content a{ 
+    display: block; 
+}
+
+.dropdown:hover .dropdown-content{ 
+    display: block; 
+}
+
+.contenedor{ 
+    display: flex; 
+    padding: 20px; 
+}
+
+main{ 
+    width: 70%; 
+}
+
+aside{ 
+    width: 30%; 
+    text-align: center; 
+}
+
+aside img{ 
+    width: 200px; 
+    height: 200px; 
+    display: block; 
+    margin: 15px auto; 
+}
+
+footer{ 
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    padding: 15px;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .contenedor{
+        flex-direction: column;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+}
+			@media screen and (max-width: 600px){
+
+    nav{
+        text-align: center;
+    }
+
+    nav a{
+        display:block;
+        border-bottom:1px solid gray;
+    }
+
+    header{
+        padding:20px;
+    }
+
+    aside img{
+        width:150px;
+        height:150px;
+    }
+
+    video{
+        width:100%;
+    }
+}
+
+</style> 
+</head> 
+
+<body> 
+
+<header>
+    <h1>CARROS PARA GUSTOS EXTREMOS</h1> 
+    <h3>NO ES EL CARRO ES EL CONDUCTOR</h3> 
+</header>
+
+<nav>
+    <a href="index toyota.html">TOYOTA</a> 
+    <a href="index volkswagen.html">VOLKSWAGEN</a> 
+    <a href="imdex chevi.html">CHEVROLET</a>
+    <a href="index mercedes.html">MERCEDES</a>
+    <a href="index ford.html">FORD</a>
+    <a href="index honda.html">HONDA</a>
+    <a href="index bmw.html">BMW</a>
+    <a href="index hyundai.html">HYUNDAI</a>
+    <a href="index cuestionario.html">CUESTIONARIO</a> 
+
+    <div class="dropdown"> 
+        <a href="index cometarios.HTML">TU PENSAMIENTO</a> 
+    </div>
+</nav>
+
+<div class="contenedor"> 
+
+<main>        
+<h2>Bienvenidos a nuestra página web de coches</h2> 
+
+<p>Te damos la bienvenida a nuestro espacio dedicado al mundo automotriz. Aquí podrás descubrir una gran variedad de coches, conocer sus características, comparar modelos y encontrar el vehículo que mejor se adapte a tus necesidades y estilo de vida.
+Nuestro objetivo es ofrecerte información clara, opciones atractivas y una experiencia sencilla para que explorar y elegir tu próximo coche sea fácil y emocionante. Ya sea que busques un vehículo moderno, económico, familiar o deportivo, aquí encontrarás diferentes alternativas para ti.
+Gracias por visitarnos y formar parte de nuestra comunidad apasionada por los coches..</p>
+
+<p>para mayor complacencia indica que tipo, haga clic en la barra de opciones.</p>
+
+<br><br><hr>                  
+
+<p><a href="BMW,FORD.mp4">VIDEO</a></p>
+
+<video width="200" controls>
+  <source src="BMW,FORD.mp4" type="video/mp4">
+  Tu navegador no soporta video.
+</video>
+
+<p>muchas garcias por su tiempo y conozca mas manito</p>
+
+<br><br>
+
+<p>contactanos en redes sociales:</p>
+
+<p><a href="https://www.facebook.com/share/1BNM1VdHu7/">faccebook</a></p>	
+<p><a href="https://www.tiktok.com/@rachal7531?_r=1&_t=ZS-94TcGxAG4Ll">Tik Tok</a></p>
+
+<p>Contacto:</p>
+
+<a href="https://mail.google.com/mail/?view=cm&to=byayanchi@gmail.com">
+correo electronico
+</a>
+
+</main>
+
+<aside>
+
+<h3>HONDA</h3>
+<img src="honda logo.webp" alt="logo de honda"> 
+
+<h3>TOYOTA</h3>
+<img src="toyota logo.png" alt="logo de TOYOTA">
+
+<h3>FORD</h3>
+<img src="Ford.jpg">
+
+</aside>
+
+</div>
+
+<footer>
+<p>Gracias por su preferencia, seguimos avanzando...</p>
+<p>Calle 20 x 25 Tixméhuac, Yucatán</p>
+</footer>
+
+</body> 
+</html>
