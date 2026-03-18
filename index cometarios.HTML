@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Comentarios</title>
 
 <style>
@@ -15,17 +16,31 @@ padding: 20px;
 
 h2 {
 color: #333;
+margin-bottom:10px;
 }
 
 input, textarea {
 width: 300px;
+max-width: 90%;
 padding: 10px;
-margin: 5px;
+margin: 8px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+textarea{
+min-height:100px;
+resize:none;
 }
 
 button {
 padding: 10px 20px;
 cursor: pointer;
+background:#333;
+color:white;
+border:none;
+border-radius:5px;
+margin-top:10px;
 }
 
 #comentarios {
@@ -34,13 +49,15 @@ margin-top: 30px;
 
 .comentario {
 background: #fff;
-display: inline-block;
+display: block;
 padding: 15px 20px;
 margin: 10px auto;
 border-radius: 20px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 width: 80%;
+max-width:600px;
 position: relative;
+text-align:left;
 }
 
 .eliminar {
@@ -61,7 +78,7 @@ cursor: pointer;
 @media screen and (max-width:900px){
 
 input, textarea{
-width:80%;
+width:90%;
 }
 
 .comentario{
@@ -77,7 +94,7 @@ width:95%;
 }
 
 button{
-width:80%;
+width:85%;
 }
 
 .comentario{
