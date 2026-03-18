@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exprime tu conocimiento </title>
 
 <style>
@@ -9,11 +10,13 @@ body{
 font-family: Arial, sans-serif;
 background:#f2f2f2;
 text-align:center;
+padding:20px;
 }
 
 .contenedor{
 background:lightblue;
 width:60%;
+max-width:700px;
 margin:auto;
 padding:20px;
 border-radius:10px;
@@ -25,6 +28,14 @@ margin:20px 0;
 text-align:left;
 }
 
+.pregunta p{
+margin-bottom:10px;
+}
+
+input{
+margin:5px;
+}
+
 button{
 background:#4CAF50;
 color:white;
@@ -33,10 +44,25 @@ padding:10px 20px;
 font-size:16px;
 border-radius:5px;
 cursor:pointer;
+margin-top:10px;
 }
 
 button:hover{
 background:#45a049;
+}
+
+a{
+display:inline-block;
+margin-top:10px;
+padding:8px 15px;
+background:#333;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+#resultado{
+margin-top:20px;
 }
 
 @media screen and (max-width:900px){
@@ -54,7 +80,7 @@ width:95%;
 }
 
 button{
-width:80%;
+width:85%;
 font-size:18px;
 }
 
@@ -105,9 +131,7 @@ font-size:18px;
 <input type="radio" name="p5" value="0"> TOYOTA
 </div>
 
-<left>
-<a href="index.html">regresar </a> <br><br>
-</left>
+<a href="index.html">regresar </a><br><br>
 
 <button type="button" onclick="calcular()">Enviar respuestas</button>
 
